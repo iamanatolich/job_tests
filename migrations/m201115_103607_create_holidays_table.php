@@ -44,7 +44,7 @@ class m201115_103607_create_holidays_table extends Migration
         ]);
 
         $this->insert('holidays', [
-            'id' => '1',
+            'id' => '2',
             'date_in' => '2020-11-18',
             'date_out' => '2020-11-25',
             'id_user' => '3',
@@ -52,7 +52,7 @@ class m201115_103607_create_holidays_table extends Migration
         ]);
 
         $this->insert('holidays', [
-            'id' => '1',
+            'id' => '3',
             'date_in' => '2020-11-14',
             'date_out' => '2020-11-22',
             'id_user' => '2',
@@ -60,7 +60,7 @@ class m201115_103607_create_holidays_table extends Migration
         ]);
 
         $this->insert('holidays', [
-            'id' => '1',
+            'id' => '4',
             'date_in' => '2020-11-17',
             'date_out' => '2020-11-24',
             'id_user' => '4',
