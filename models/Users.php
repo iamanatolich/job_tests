@@ -42,7 +42,7 @@ class Users extends \yii\db\ActiveRecord implements IdentityInterface
             [['login'], 'string', 'max' => 15],
             [['pass'], 'string', 'max' => 255],
             [['password'], 'string', 'max' => 255],
-            [['login'], 'successLogin']
+            //[['login'], 'successLogin']
         ];
     }
 
@@ -160,12 +160,12 @@ class Users extends \yii\db\ActiveRecord implements IdentityInterface
         return $this->save();
     }
 
-    public function successLogin()
-    {
-        $login = $this->login;
-        if($login != Yii::$app->user->identity->login)
-           if ($login = Users::findByUsername($login)) {
-                   $this->addError('login', 'Пользователь с таким логином уже существует');
-           }
-    }
+//    public function successLogin()
+//    {
+//        $login = $this->login;
+//        if($login != Yii::$app->user->identity->login)
+//           if ($login = Users::findByUsername($login)) {
+//                   $this->addError('login', 'Пользователь с таким логином уже существует');
+//           }
+//    }
 }

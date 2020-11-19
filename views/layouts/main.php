@@ -46,7 +46,7 @@ AppAsset::register($this);
 
         $items[] = ['label' => 'Редактировать профиль', 'url' => ['/users/update?id='.Yii::$app->user->id]];
         $items[] = [
-            'label' => 'Выход (' . Yii::$app->user->identity->login . ')',
+            'label' => 'Выход',
             'url' => ['/auth/logout'],
             'linkOptions' => ['data-method' => 'post']
         ];
@@ -95,7 +95,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>

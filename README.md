@@ -12,8 +12,8 @@
 1. php >= 7.2
 2. git clone https://github.com/iamanatolich/job_tests.git
 3. `config/db.php` (Прописать логин, пароль и имя базы данных)
-4. chmod -R 777 /var/www/`{YOUR_PROJECT}`/public_html/ (Прописать права на директорию)
-5. В консоли пишем `php yii migrate`
+4. В консоли ide прописать `chmod -R 777 {YOUR_PROJECT}` (Вместо {YOUR_PROJECT} укажите путь к вашему проекту)
+5. В консоли ide пишем `php yii migrate`
 
 CONFIGURATION
 -------------
