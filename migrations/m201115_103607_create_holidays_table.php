@@ -34,6 +34,38 @@ class m201115_103607_create_holidays_table extends Migration
             'id',
             'CASCADE'
         );
+
+        $this->insert('holidays', [
+            'id' => '1',
+            'date_in' => '2020-11-16',
+            'date_out' => '2020-11-23',
+            'id_user' => '2',
+            'approved' => '0',
+        ]);
+
+        $this->insert('holidays', [
+            'id' => '1',
+            'date_in' => '2020-11-18',
+            'date_out' => '2020-11-25',
+            'id_user' => '3',
+            'approved' => '0',
+        ]);
+
+        $this->insert('holidays', [
+            'id' => '1',
+            'date_in' => '2020-11-14',
+            'date_out' => '2020-11-22',
+            'id_user' => '2',
+            'approved' => '1',
+        ]);
+
+        $this->insert('holidays', [
+            'id' => '1',
+            'date_in' => '2020-11-17',
+            'date_out' => '2020-11-24',
+            'id_user' => '4',
+            'approved' => '0',
+        ]);
     }
 
     /**

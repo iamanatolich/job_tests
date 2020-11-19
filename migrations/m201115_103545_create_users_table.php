@@ -26,7 +26,7 @@ class m201115_103545_create_users_table extends Migration
             'name' => 'Имя (тест)',
             'surname' => 'Фамилия (тест)',
             'login' => 'admin',
-            'pass' => '$2y$13$6Ah232KnMfqUBXgAy6ZNjem41QWy/ED9IURwiGqA/jrwjOUvucGHa',
+            'pass' => '$2y$13$mfYsEoBRcOBzlbQp3.CmPuEI/ZfPSyJ..gsUmG.Mwo6ftzqL8.XUG', //root
             'id_position' => '1'
         ]);
 
@@ -35,8 +35,26 @@ class m201115_103545_create_users_table extends Migration
             'name' => 'Тест',
             'surname' => 'Тест',
             'login' => 'test',
-            'pass' => '$2y$13$U0EF5CILzprFdpeIT//t2.KBiPbQH93YNGbV2IIQXY4sT/7KBWCPu',
-            'id_position' => '1'
+            'pass' => '$2y$13$U0EF5CILzprFdpeIT//t2.KBiPbQH93YNGbV2IIQXY4sT/7KBWCPu', //test
+            'id_position' => '0'
+        ]);
+
+        $this->insert('users', [
+            'id' => '3',
+            'name' => 'Тест1',
+            'surname' => 'Тест1',
+            'login' => 'test1',
+            'pass' => '$2y$13$BuPN5SlV.i72y2sMeNAe/erGsRu/sIjOvDkG08/25OWxbVwO.9cKm', //test1
+            'id_position' => '0'
+        ]);
+
+        $this->insert('users', [
+            'id' => '4',
+            'name' => 'Тест2',
+            'surname' => 'Тест2',
+            'login' => 'test2',
+            'pass' => '$2y$13$1/4tWN/xDCn1US8Za9kk0.QH3iTup3I6jRX9pzKRLGxExwDbc0LqC', //test2
+            'id_position' => '0'
         ]);
     }
 

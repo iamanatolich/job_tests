@@ -46,7 +46,8 @@ The minimum requirement by this project template that your Web server supports P
 1. php >= 7.2
 2. git clone https://github.com/iamanatolich/job_tests.git
 3. `config/db.php` (Прописать логин, пароль и имя базы данных)
-4.
+4. chmod -R 777 /var/www/`{YOUR_PROJECT}`/public_html/ (Прописать права на директорию)
+5. В консоли пишем `php yii migrate`
 
 CONFIGURATION
 -------------
